@@ -22,7 +22,7 @@ const modulesArray = JSON.parse(modules);
 document.getElementById("json").innerHTML = modulesArray;
 
 function Toggle(){
-    let cssStyle = document.getElementById('cssStyle');
+    const cssStyle = document.getElementById('cssStyle');
     if (cssStyle.getAttribute('href') == 'basestyle.css') {
         cssStyle.setAttribute('href', 'cssDemo.css');
     } else {
