@@ -24,7 +24,7 @@ document.getElementById("json").innerHTML = modulesArray;
 function Toggle(){
     let cssStyle = document.getElementById('cssStyle');
     if (cssStyle.getAttribute('href') == 'basestyle.css') {
-        cssStyle.setAttribute('href', 'cssDemo.css');
+        cssStyle.setAttribute('href', 'cssdemo.css');
     } else {
         cssStyle.setAttribute('href', 'basestyle.css');
     }
