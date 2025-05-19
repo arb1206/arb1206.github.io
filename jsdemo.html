@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="The demo page for Javascript">
+        <meta name="author" content="Anna Barrett">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link id="cssStyle" rel="stylesheet" href="basestyle.css">
+        <title>Javascript Demo Page</title>
+        <script src="jsdemo.js" defer></script>
+
+    </head>
+
+    <body>
+        <nav>
+            <ul class="navStyle">
+                <li class="navList"><a href="index.html">Home</a></li>
+                <li class="navList"><a href="qualifications.html">Qualifications</a></li>
+                <li class="navList"><a href="interest.html">Interests</a></li>
+                <li class="navList"><a href="demos.html">Demos</a></li>
+            </ul>
+        </nav>
+    
+        <main>
+            <h1>Javascript Demo</h1>
+
+            <p>This page will contain multiple javascript demonstrations.</p>
+
+            <h2>Change the text</h2>
+            <p id="textToChange">Would you like to change this text?</p>
+            <button id="yesBtn" onclick="changeText()">Yes</button>
+            <button id="noBtn" onclick="addText()">No</button>
+            <p id="noBtnSpace"></p>
+
+            <section>
+                <h2>Generate a number</h2>
+                <p>Please enter the minimum and maximum values then click to get a number within that range.</p>
+                <form>
+                    <label for="min">Minimum Number:</label><br>
+                    <input type="number" id="min" placeholder="Lower number" name="min"/><br>
+                    <label for="max">Maximum Number:</label><br>
+                    <input type="number" id="max" placeholder="Higher number" name="max"/><br>
+                </form>
+                <button id="numBtn" onclick="readInput()">Get Number</button>
+                <p id="result"></p>
+            </section>
+
+            <h2>JSON Demo</h2>
+            <p>Below is a JSON array containing the modules I have studied this semester.</p>
+            <p id="json"></p>
+
+            <h2>Swap Styles</h2>
+            <p>Click to switch the style.</p>
+            <button onclick="Toggle()">Toggle</button>
+
+        </main>
+
+        <footer>
+            <div class="footerText">
+                <p>Anna Barrett<br>
+                    Student ID: 24013280<br>
+                    This Website has been created for an assignment from the University of Staffordshire software development module.</p>
+            </div>
+        </footer>
+    </body>
+</html>
